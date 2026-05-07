@@ -19,6 +19,16 @@ Standard LLMs rely solely on their internal, pre-trained parametric memory. If t
 3. **Generate:** The retrieved text chunks are combined with the user's original question and sent to the LLM. The LLM synthesizes this context to generate a highly accurate, grounded response.
 
 ---
+## Basic pipeline of RAG
+
+<img width="720" height="651" alt="1_FhMJ8OE_PoeOyeAavYjzlw" src="https://github.com/user-attachments/assets/efef644e-c6d2-4985-a6bd-2af9d80c8bd8" />
+
+### Technical Architecture of a RAG System
+
+<img width="2752" height="1536" alt="Gemini_Generated_Image_k51mu7k51mu7k51m" src="https://github.com/user-attachments/assets/c7e64286-9a2c-47b3-843c-9415e9db652e" />
+
+
+
 
 ## Pros and Cons of RAG
 
