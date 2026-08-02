@@ -48,10 +48,13 @@ Built using **LangGraph**, **ChromaDB**, **BM25**, **HuggingFace Embeddings**, *
 
 ---
 
-## 🚀 Quick Start Guide (using `uv`)
+## 🚀 Quick Start Guide
+
+> ℹ️ **Note on Package Management**: This project was developed and optimized using the **`uv`** package manager for fast, deterministic workspace synchronization. Using `pip` is **optional** but fully supported.
 
 ### 1. Environment Setup & Virtual Environment Activation
 
+#### Option A: Using `uv` (Recommended - Developed with `uv`)
 From the repository root (`rag_projects`):
 
 ```bash
@@ -67,6 +70,27 @@ uv sync
 
 # On macOS/Linux:
 source .venv/bin/activate
+```
+
+#### Option B: Using standard `pip` (Optional)
+If you prefer using standard Python `pip`:
+
+```bash
+# 1. Create a virtual environment
+python -m venv .venv
+
+# 2. Activate the virtual environment
+# On Windows (PowerShell):
+.\.venv\Scripts\Activate.ps1
+
+# On Windows (Command Prompt):
+.\.venv\Scripts\activate.bat
+
+# On macOS/Linux:
+source .venv/bin/activate
+
+# 3. Install dependencies from requirements.txt
+pip install -r financial_qa/requirements.txt
 ```
 
 ### 2. LLM Setup (Ollama or API Key)
