@@ -46,9 +46,11 @@ Standard LLMs rely solely on their internal, pre-trained parametric memory. If t
 
 ## 🛠️ Workspace Setup & Quick Start
 
-### 1. Installation & Environment Activation
-Install dependencies with `uv` and activate your virtual environment:
+> ℹ️ **Package Manager Note**: This project was developed and managed using the **`uv`** package manager. Standard `pip` installation is **optional** but fully supported.
 
+### 1. Installation & Environment Activation
+
+#### Option A: Using `uv` (Recommended - Developed with `uv`)
 ```bash
 # Sync dependencies across all workspace projects
 uv sync
@@ -62,6 +64,25 @@ uv sync
 
 # On macOS/Linux:
 source .venv/bin/activate
+```
+
+#### Option B: Using standard `pip` (Optional)
+```bash
+# 1. Create a virtual environment
+python -m venv .venv
+
+# 2. Activate the virtual environment
+# On Windows (PowerShell):
+.\.venv\Scripts\Activate.ps1
+
+# On Windows (Command Prompt):
+.\.venv\Scripts\activate.bat
+
+# On macOS/Linux:
+source .venv/bin/activate
+
+# 3. Install subproject dependencies from requirements.txt
+pip install -r financial_qa/requirements.txt
 ```
 
 ### 2. Running an LLM (Ollama or API Keys)
