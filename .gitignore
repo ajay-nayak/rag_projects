@@ -216,3 +216,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project Specific Data & Vector Databases
+financial_qa/data/chroma_db/
+financial_qa/data/cache/
+data/chroma_db/
+data/cache/
+
+# MLflow Tracking & Local Databases
+mlflow.db
+mlruns/
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment Files
+.env
+.env.*
+!.env.example
+
+# IDE & System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

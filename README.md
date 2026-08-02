@@ -44,5 +44,52 @@ Standard LLMs rely solely on their internal, pre-trained parametric memory. If t
 * **Dependent on Retrieval Quality (GIGO):** If your chunking strategy is bad or your embedding model misses the right document, the LLM will still fail to answer correctly.
 * **Context Window Limits:** You can only feed a limited number of retrieved documents into the LLM's prompt before it loses focus or hits token limits.
 
+## 🛠️ Workspace Setup & Quick Start
+
+### 1. Installation & Environment Activation
+Install dependencies with `uv` and activate your virtual environment:
+
+```bash
+# Sync dependencies across all workspace projects
+uv sync
+
+# Activate the virtual environment (.venv)
+# On Windows (PowerShell):
+.\.venv\Scripts\Activate.ps1
+
+# On Windows (Command Prompt):
+.\.venv\Scripts\activate.bat
+
+# On macOS/Linux:
+source .venv/bin/activate
+```
+
+### 2. Running an LLM (Ollama or API Keys)
+
+#### Local Ollama Model (Recommended)
+1. Download and install [Ollama](https://ollama.com/).
+2. Pull and start your preferred model (e.g. `llama3.2`):
+   ```bash
+   ollama pull llama3.2
+   ollama run llama3.2
+   ```
+3. Set your provider parameters in `.env`:
+   ```env
+   LLM_PROVIDER=ollama
+   OLLAMA_MODEL=llama3.2
+   OLLAMA_BASE_URL=http://localhost:11434
+   ```
+
+#### Cloud LLM (OpenAI)
+Add your OpenAI key to `.env`:
+```env
+LLM_PROVIDER=openai
+OPENAI_API_KEY=sk-proj-...
+```
+
 ---
 
+## 📌 Projects in this Repository
+
+- **[financial_qa](file:///c:/Data/Practice/github_projects/rag_projects/financial_qa)**: State-of-the-art Agentic RAG System for Financial Reports using LangGraph, ChromaDB, BM25 Hybrid RRF, RAGAS, and Streamlit.
+- **[ai_article](file:///c:/Data/Practice/github_projects/rag_projects/ai_article)**: AI article summarization and retrieval pipelines.

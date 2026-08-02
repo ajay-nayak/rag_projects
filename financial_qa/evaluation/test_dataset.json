@@ -1,0 +1,23 @@
+[
+  {
+    "question": "What is the total net revenue reported for the fiscal year?",
+    "ground_truth": "The company reported total net revenue of $14.2 billion for the fiscal year, representing an 8% increase year-over-year.",
+    "contexts": [
+      "Total net revenue for the fiscal year reached $14.2 billion, up 8% from $13.15 billion in the previous fiscal year."
+    ]
+  },
+  {
+    "question": "What was the operating profit margin percentage?",
+    "ground_truth": "Operating profit margin reached 22.5% compared to 20.1% in the prior year.",
+    "contexts": [
+      "Operating income rose to $3.195 billion, expanding operating profit margin to 22.5% compared to 20.1% in the prior year."
+    ]
+  },
+  {
+    "question": "What are the primary risk factors identified regarding supply chain dependencies?",
+    "ground_truth": "The primary risk factors include raw material price volatility, single-source semiconductor component dependencies, and potential geopolitical shipping disruptions.",
+    "contexts": [
+      "Risk Factors: Supply chain vulnerabilities include reliance on single-source suppliers for critical microchips and potential shipping channel bottlenecks."
+    ]
+  }
+]
